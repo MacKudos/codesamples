@@ -6,83 +6,95 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		FD6941132200C4D600D006F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6941122200C4D600D006F7 /* main.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FD69410D2200C4D600D006F7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		FD69410F2200C4D600D006F7 /* example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = example; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD6941122200C4D600D006F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD69411B2200C4FF00D006F7 /* PLChallengeHeadCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeHeadCollectionViewCell.m; sourceTree = "<group>"; };
+		FD69411C2200C4FF00D006F7 /* PLChallengeRewardCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeRewardCollectionViewCell.h; sourceTree = "<group>"; };
+		FD69411D2200C4FF00D006F7 /* PLChallengeAuthorCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeAuthorCollectionViewCell.h; sourceTree = "<group>"; };
+		FD69411E2200C4FF00D006F7 /* PLChallengeDescriptionCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeDescriptionCollectionViewCell.h; sourceTree = "<group>"; };
+		FD69411F2200C4FF00D006F7 /* PLChallengePostSectionHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengePostSectionHeader.m; sourceTree = "<group>"; };
+		FD6941202200C4FF00D006F7 /* PLChallengeDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeDetailViewController.h; sourceTree = "<group>"; };
+		FD6941212200C4FF00D006F7 /* PLChallengeDetailPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeDetailPresenter.h; sourceTree = "<group>"; };
+		FD6941222200C4FF00D006F7 /* PLChallengeParticipateCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeParticipateCollectionViewCell.h; sourceTree = "<group>"; };
+		FD6941232200C4FF00D006F7 /* PLChallengeRewardCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeRewardCollectionViewCell.m; sourceTree = "<group>"; };
+		FD6941242200C4FF00D006F7 /* PLChallengeHeadCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeHeadCollectionViewCell.h; sourceTree = "<group>"; };
+		FD6941252200C4FF00D006F7 /* PLChallengeDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeDetailViewController.m; sourceTree = "<group>"; };
+		FD6941262200C4FF00D006F7 /* PLChallengePostSectionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengePostSectionHeader.h; sourceTree = "<group>"; };
+		FD6941272200C4FF00D006F7 /* PLChallengeDescriptionCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeDescriptionCollectionViewCell.m; sourceTree = "<group>"; };
+		FD6941282200C4FF00D006F7 /* PLChallengeAuthorCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeAuthorCollectionViewCell.m; sourceTree = "<group>"; };
+		FD6941292200C4FF00D006F7 /* PLChallengeParticipateCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeParticipateCollectionViewCell.m; sourceTree = "<group>"; };
+		FD69412A2200C4FF00D006F7 /* PLChallengeDetailPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeDetailPresenter.m; sourceTree = "<group>"; };
+		FD69412C2200C4FF00D006F7 /* PLChallengeDetailItemViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeDetailItemViewModel.m; sourceTree = "<group>"; };
+		FD69412D2200C4FF00D006F7 /* PLChallengeDetailUIModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeDetailUIModel.m; sourceTree = "<group>"; };
+		FD69412E2200C4FF00D006F7 /* PLChallengeDetailInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeDetailInteractor.m; sourceTree = "<group>"; };
+		FD69412F2200C4FF00D006F7 /* PLChallengeDetailComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeDetailComponent.h; sourceTree = "<group>"; };
+		FD6941302200C4FF00D006F7 /* PLChallengeDetailProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeDetailProtocols.h; sourceTree = "<group>"; };
+		FD6941312200C4FF00D006F7 /* PLChallengeDetailItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeDetailItemViewModel.h; sourceTree = "<group>"; };
+		FD6941322200C4FF00D006F7 /* PLChallengeDetailUIModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeDetailUIModel.h; sourceTree = "<group>"; };
+		FD6941332200C4FF00D006F7 /* PLChallengeDetailComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLChallengeDetailComponent.m; sourceTree = "<group>"; };
+		FD6941342200C4FF00D006F7 /* PLChallengeDetailInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLChallengeDetailInteractor.h; sourceTree = "<group>"; };
+		FD6941352200C50500D006F7 /* Screen Shot 2019-01-29 at 4.16.43 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-01-29 at 4.16.43 PM.png"; sourceTree = "<group>"; };
+		FD6941362200C50500D006F7 /* Screen Shot 2019-01-29 at 8.02.34 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-01-29 at 8.02.34 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		FD69410C2200C4D600D006F7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FD6941062200C4D600D006F7 = {
 			isa = PBXGroup;
 			children = (
-				FD6941112200C4D600D006F7 /* example */,
-				FD6941102200C4D600D006F7 /* Products */,
+				FD6941352200C50500D006F7 /* Screen Shot 2019-01-29 at 4.16.43 PM.png */,
+				FD6941362200C50500D006F7 /* Screen Shot 2019-01-29 at 8.02.34 PM.png */,
+				FD6941192200C4FF00D006F7 /* ChallengeDetail */,
 			);
 			sourceTree = "<group>";
 		};
-		FD6941102200C4D600D006F7 /* Products */ = {
+		FD6941192200C4FF00D006F7 /* ChallengeDetail */ = {
 			isa = PBXGroup;
 			children = (
-				FD69410F2200C4D600D006F7 /* example */,
+				FD69412B2200C4FF00D006F7 /* UIModel */,
+				FD69411A2200C4FF00D006F7 /* UIComponents */,
 			);
-			name = Products;
+			path = ChallengeDetail;
 			sourceTree = "<group>";
 		};
-		FD6941112200C4D600D006F7 /* example */ = {
+		FD69411A2200C4FF00D006F7 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				FD6941122200C4D600D006F7 /* main.m */,
+				FD6941212200C4FF00D006F7 /* PLChallengeDetailPresenter.h */,
+				FD69412A2200C4FF00D006F7 /* PLChallengeDetailPresenter.m */,
+				FD6941202200C4FF00D006F7 /* PLChallengeDetailViewController.h */,
+				FD6941252200C4FF00D006F7 /* PLChallengeDetailViewController.m */,
+				FD6941262200C4FF00D006F7 /* PLChallengePostSectionHeader.h */,
+				FD69411F2200C4FF00D006F7 /* PLChallengePostSectionHeader.m */,
+				FD6941242200C4FF00D006F7 /* PLChallengeHeadCollectionViewCell.h */,
+				FD69411B2200C4FF00D006F7 /* PLChallengeHeadCollectionViewCell.m */,
+				FD69411C2200C4FF00D006F7 /* PLChallengeRewardCollectionViewCell.h */,
+				FD6941232200C4FF00D006F7 /* PLChallengeRewardCollectionViewCell.m */,
+				FD69411D2200C4FF00D006F7 /* PLChallengeAuthorCollectionViewCell.h */,
+				FD6941282200C4FF00D006F7 /* PLChallengeAuthorCollectionViewCell.m */,
+				FD69411E2200C4FF00D006F7 /* PLChallengeDescriptionCollectionViewCell.h */,
+				FD6941272200C4FF00D006F7 /* PLChallengeDescriptionCollectionViewCell.m */,
+				FD6941222200C4FF00D006F7 /* PLChallengeParticipateCollectionViewCell.h */,
+				FD6941292200C4FF00D006F7 /* PLChallengeParticipateCollectionViewCell.m */,
 			);
-			path = example;
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FD69412B2200C4FF00D006F7 /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD6941302200C4FF00D006F7 /* PLChallengeDetailProtocols.h */,
+				FD6941322200C4FF00D006F7 /* PLChallengeDetailUIModel.h */,
+				FD69412D2200C4FF00D006F7 /* PLChallengeDetailUIModel.m */,
+				FD6941342200C4FF00D006F7 /* PLChallengeDetailInteractor.h */,
+				FD69412E2200C4FF00D006F7 /* PLChallengeDetailInteractor.m */,
+				FD69412F2200C4FF00D006F7 /* PLChallengeDetailComponent.h */,
+				FD6941332200C4FF00D006F7 /* PLChallengeDetailComponent.m */,
+				FD6941312200C4FF00D006F7 /* PLChallengeDetailItemViewModel.h */,
+				FD69412C2200C4FF00D006F7 /* PLChallengeDetailItemViewModel.m */,
+			);
+			path = UIModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		FD69410E2200C4D600D006F7 /* example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FD6941162200C4D600D006F7 /* Build configuration list for PBXNativeTarget "example" */;
-			buildPhases = (
-				FD69410B2200C4D600D006F7 /* Sources */,
-				FD69410C2200C4D600D006F7 /* Frameworks */,
-				FD69410D2200C4D600D006F7 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = example;
-			productName = example;
-			productReference = FD69410F2200C4D600D006F7 /* example */;
-			productType = "com.apple.product-type.tool";
-		};
-/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FD6941072200C4D600D006F7 /* Project object */ = {
@@ -90,11 +102,6 @@
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = hexbert;
-				TargetAttributes = {
-					FD69410E2200C4D600D006F7 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-				};
 			};
 			buildConfigurationList = FD69410A2200C4D600D006F7 /* Build configuration list for PBXProject "example" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -104,25 +111,13 @@
 				en,
 			);
 			mainGroup = FD6941062200C4D600D006F7;
-			productRefGroup = FD6941102200C4D600D006F7 /* Products */;
+			productRefGroup = FD6941062200C4D600D006F7;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD69410E2200C4D600D006F7 /* example */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		FD69410B2200C4D600D006F7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD6941132200C4D600D006F7 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		FD6941142200C4D600D006F7 /* Debug */ = {
@@ -236,24 +231,6 @@
 			};
 			name = Release;
 		};
-		FD6941172200C4D600D006F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 28M2UETXCL;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FD6941182200C4D600D006F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 28M2UETXCL;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -262,15 +239,6 @@
 			buildConfigurations = (
 				FD6941142200C4D600D006F7 /* Debug */,
 				FD6941152200C4D600D006F7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FD6941162200C4D600D006F7 /* Build configuration list for PBXNativeTarget "example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD6941172200C4D600D006F7 /* Debug */,
-				FD6941182200C4D600D006F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

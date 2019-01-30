@@ -11,6 +11,7 @@
 @class PLChallenge;
 
 @interface PLChallengeDetailComponent : NSObject
+    
 @property (nonatomic, readonly) id model;
 @property (nonatomic, readonly) UIViewController *vc;
 @property (nonatomic, readonly) id presenter;

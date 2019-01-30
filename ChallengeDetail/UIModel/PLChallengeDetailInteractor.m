@@ -16,6 +16,7 @@
 @end
 
 @implementation PLChallengeDetailInteractor
+
 @synthesize sort = _sort;
     
 - (instancetype)init {
@@ -26,8 +27,8 @@
     return self;
 }
 
-- (void)setSort:(PLChallengeDetailPostsSort)sort
-{
+- (void)setSort:(PLChallengeDetailPostsSort)sort {
+    
     _sort = sort;
     
     self.params.nextPage = nil;

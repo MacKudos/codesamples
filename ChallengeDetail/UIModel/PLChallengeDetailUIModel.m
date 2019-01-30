@@ -130,7 +130,6 @@
     });
 }
 
-
 #pragma mark - PLChallengeDetailUIModelEventHandlingProtocol
 
 - (void)rootViewDidLoadEvent {
@@ -178,7 +177,6 @@
     [self.delegate pleaseShowCardComposing];
 }
 
-
 - (void)didSelectSubscribe {
     
     if (!self.viewModel.challengeMeta.isSubscribed) {
@@ -200,10 +198,11 @@
 }
 
 - (void)didSelectShare {
+//TODO:  logic flow should be delegated to presenter
     
-    NSString *slug = [NSString stringWithFormat:@"https://sola.ai/challenges/%@?r=%@", self.challenge.slug, [[PLServiceHolder sharedInstance].sessionService obtainCurrentUser].slug];
-    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    pasteboard.string = slug;
+//    NSString *slug = [NSString stringWithFormat:@"https://sola.ai/challenges/%@?r=%@", self.challenge.slug, [[PLServiceHolder sharedInstance].sessionService obtainCurrentUser].slug];
+//    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+//    pasteboard.string = slug;
 
 //    PLInviteComponent *cmp = [[PLInviteComponent alloc] initWithLink:slug];
 //    cmp.vc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
@@ -222,7 +221,6 @@
     self.interactor.sort = PLChallengeDetailPostsSortTop;
     [self reloadPosts];
 }
-
 
 #pragma mark - PLChallengeDetailUIModelDataProvidingProtocol
 
@@ -271,14 +269,12 @@
     
     if (self.selectedIndexPath.section == PLChallengeDetailUIModelSectionPosts)
         return [self cardViewModelForIndexPath:self.selectedIndexPath];
-    
     return nil;
 }
 
 - (PLUser *)creatorUser {
     return self.challenge.user;
 }
-
 
 - (BOOL)isMore {
     return self.interactor.isMore;
@@ -312,7 +308,7 @@
 }
     
 - (void)composeViewController:(PLComposeViewController *)ctrl didSendWithProgress:(float)progress {
-    
+    //
 }
     
 - (void)composeViewControllerDidCancel:(PLComposeViewController *)ctrl {
@@ -320,6 +316,6 @@
 }
     
 - (void)composeViewController:(PLComposeViewController *)ctrl updateProgress:(CGFloat)progress {
-    
+    //
 }
 @end

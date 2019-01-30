@@ -106,8 +106,8 @@ typedef enum : NSUInteger {
 
 @protocol PLChallengeDetailPresenterProtocol <NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
     
-    @property (nonatomic, strong) id <PLChallengeDetailUIModelDataProvidingProtocol> dataProvider;
-    @property (nonatomic, strong) id <PLChallengeDetailUIModelEventHandlingProtocol> eventHandler;
+@property (nonatomic, strong) id <PLChallengeDetailUIModelDataProvidingProtocol> dataProvider;
+@property (nonatomic, strong) id <PLChallengeDetailUIModelEventHandlingProtocol> eventHandler;
     
 - (void)registerUICellsForCollectionView:(UICollectionView *)collectionView;
 - (void)setupVisualsForViewController:(PLChallengeDetailViewController *)vc; //should be over protocol binding

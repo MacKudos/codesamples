@@ -14,6 +14,7 @@
 
 
 @interface PLChallengeDetailComponent ()
+    
 @property (nonatomic, readwrite) id model;
 @property (nonatomic, readwrite) UIViewController *vc;
 @property (nonatomic, readwrite) id presenter;
